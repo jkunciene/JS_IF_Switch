@@ -50,3 +50,19 @@ function setPazymys() {
     }
     rezultatas.innerHTML = text;
 }
+
+const s=["j","a","v","a","s","c","r","i","p","t"];
+function printLetter(s) {
+    const balses=["a", "e", "i", "o", "u"];
+    for(let x in s){
+        if(Object.values(balses).includes(s[x])){
+            console.log(s[x]);
+        }
+    }
+    for(let x in s){
+        if(!Object.values(balses).includes(s[x])){
+            console.log(s[x]);
+        }
+    }
+}
+printLetter(s);
